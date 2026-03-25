@@ -1,0 +1,120 @@
+/* Variáveis de cores para facilitar mudanças */
+:root {
+  --primary: #2563eb;
+  --dark: #0f172a;
+  --gray: #64748b;
+  --bg: #f1f5f9;
+}
+
+body {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background-color: var(--bg);
+  color: #334155;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, var(--dark), var(--primary));
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+
+header p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 850px;
+  margin: -40px auto 50px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.info-pessoal {
+  display: flex;
+  gap: 20px;
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 15px;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+h2 {
+  color: var(--dark);
+  font-size: 1.5rem;
+  border-left: 4px solid var(--primary);
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: #eff6ff;
+  color: var(--primary);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: 1px solid #dbeafe;
+}
+
+.contato-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.contato-lista li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.contato-lista a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contato-lista a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--gray);
+  font-size: 0.85rem;
+}
+
+/* Ajuste para telas de celular */
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 20px;
+  }
+}
